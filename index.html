@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>For My Special One ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="hearts"></div>
+
+<div id="startScreen" class="screen fade-in">
+    <h1>Hey Guttuda ❤️</h1>
+    <h2>Do you want to know 10 reasons why I love you?</h2>
+
+    <p class="instruction">Before we begin… put this on 🎵 and come back here and if spotify me ad aaye to skip karke aana</p>
+
+    <button onclick="openSpotify()" id="spotifyBtn" class="spotify-btn pulse">
+        Play Our Song on Spotify
+    </button>
+
+    <button onclick="startExperience()" id="beginBtn" class="begin-btn disabled" disabled>
+        I'm Ready ❤️
+    </button>
+</div>
+
+
+<div id="countdownScreen" class="screen hidden">
+    <h1 id="countdown"></h1>
+</div>
+
+<div id="mainContent" class="screen hidden">
+    <div class="image-container">
+        <img id="photo1" class="active" src="images/pic1.jpg">
+        <img id="photo2" class="inactive" src="images/pic2.jpg">
+    </div>
+
+    <h2 id="reasonText"></h2>
+    <button id="nextBtn" onclick="nextReason()">Next ❤️</button>
+</div>
+
+<div id="finalScreen" class="screen hidden final-screen">
+    <div class="final-overlay"></div>
+    <img id="finalPhoto" src="images/pic10.jpg" class="final-image">
+    <div class="final-text">
+        <h1>Wait...</h1>
+        <h2 id="finalMessage"></h2>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
